@@ -1,42 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar aja</title>
-    <style>
-        h1 {
-            color: rgb(0, 149, 255);
+    <title>Portofolio - Ronny Saputra</title>
 
-        }
-        body {
-            background: gray;
-            font-family: Helvetica Neue, Helvetica, Arial, Helvetica, sans-serif;
-            button{
-                border-radius: 5px;
-                background: white;
-                padding: 10px;
-                width: 50px;
-                height: 50px;
-            }
-        }
-    </style>
 </head>
-
 <body>
 
-    <h1>My web</h1>
-    <p>Ini <br/> paragraf yang dibreak dan berhuruf <strong>bold</strong> and <em> garis miring </em> </p>
-    <h2>Judul </h2>
-    <p>Disini ada button</p>
-    <button>Next</button>
-    <h3>Sub bab</h3>
-    hai
-    <ul>
-        <li>ini list</li>
-        <li>ini list</li>
-    </ul>
+    <header>
+        <div class="container">
+            <h1>Ronny Saputra</h1>
+            <nav>
+                <ul>
+                    <li><a href="#tentang">Tentang Saya</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <img src="/image/Profile.png" alt="Foto Profil Anda">
+                <h1>Ronny Saputra</h1>
+                <p>Informatics student | Software Eng</p>
+            </div>
+        </section>
+        
+        <section id="tentang" class="container">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo saya Ronny, Kuliah di UPH semester 5.
+            </p>
+        </section>
+
+        <section id="proyek" class="container">
+            <h2>Proyek Saya</h2>
+            <div class="proyek-grid">
+                <div class="proyek-item">
+                    <img src="image/Projek1.png" alt="Gambar Proyek 1">
+                    <h3>Nama Proyek 1</h3>
+                    <p>Deskripsi Proyek 1</p>
+                    <a href="#">Lihat Proyek</a>
+                </div>
+
+                <div class="proyek-item">
+                    <img src="image/Projek2.png" alt="Gambar Proyek 2">
+                    <h3>Nama Proyek 2</h3>
+                    <p>Deskripsi proyek 2</p>
+                    <a href="#">Lihat Proyek</a>
+                </div>
+
+                <div class="proyek-item">
+                    <img src="image/Projek3.png" alt="Gambar Proyek 3">
+                    <h3>Nama Proyek 3</h3>
+                    <p>Deskripsi proyek 3</p>
+                    <a href="#">Lihat Proyek</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="container">
+            <h2>Hubungi Saya</h2>
+            <p>
+                Anda tertarik untuk bekerja sama? Silakan hubungi saya melalui email di <a href="ronihanssaputra@gmail.com">[ronihanssaputra@gmail.com]</a> atau temukan saya di <a href="https://github.com/Ronny-Saputra/" target="_blank">GITHUB</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ronny Saputra. Hak cipta dilindungi.</p>
+    </footer>
 
 </body>
-
 </html>
