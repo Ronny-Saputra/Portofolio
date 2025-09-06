@@ -3,77 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Ronny Saputra</title>
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Ronny Saputra</h1>
-            <nav>
-                <ul>
-                    <li><a href="#tentang">Tentang Saya</a></li>
-                    <li><a href="#proyek">Proyek</a></li>
-                    <li><a href="#kontak">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Ronny Saputra</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="greeting">Hello.</p>
+                <h1>I'm Ronny Saputra</h1>
+                <h2>Software Developer</h2>
+                <a href="#contact" class="btn">Hire me</a>
+                <a href="#" class="btn btn-secondary">My Resume</a>
+            </div>
+            <div class="hero-image">
                 <img src="/image/Profile.png" alt="Foto Profil Anda">
-                <h1>Ronny Saputra</h1>
-                <p>Informatics student | Software Eng</p>
             </div>
         </section>
-        
-        <section id="tentang" class="container">
-            <h2>Tentang Saya</h2>
-            <p>
-                Halo saya Ronny, Kuliah di UPH semester 5.
-            </p>
-        </section>
 
-        <section id="proyek" class="container">
-            <h2>Proyek Saya</h2>
-            <div class="proyek-grid">
-                <div class="proyek-item">
-                    <img src="image/Projek1.png" alt="Gambar Proyek 1">
-                    <h3>Nama Proyek 1</h3>
-                    <p>Deskripsi Proyek 1</p>
-                    <a href="#">Lihat Proyek</a>
-                </div>
-
-                <div class="proyek-item">
-                    <img src="image/Projek2.png" alt="Gambar Proyek 2">
-                    <h3>Nama Proyek 2</h3>
-                    <p>Deskripsi proyek 2</p>
-                    <a href="#">Lihat Proyek</a>
-                </div>
-
-                <div class="proyek-item">
-                    <img src="image/Projek3.png" alt="Gambar Proyek 3">
-                    <h3>Nama Proyek 3</h3>
-                    <p>Deskripsi proyek 3</p>
-                    <a href="#">Lihat Proyek</a>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About me</h2>
+                <p>
+                    Saya adalah seorang Software Developer dengan pengalaman lebih dari 2 tahun dalam mengembangkan aplikasi web dan mobile. Saya memiliki keahlian dalam berbagai teknologi seperti JavaScript, Node.js, dan Python. Saya selalu bersemangat untuk belajar hal baru dan berkontribusi dalam proyek-proyek yang menantang.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>-%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Years Experience</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="kontak" class="container">
-            <h2>Hubungi Saya</h2>
-            <p>
-                Anda tertarik untuk bekerja sama? Silakan hubungi saya melalui email di <a href="ronihanssaputra@gmail.com">[ronihanssaputra@gmail.com]</a> atau temukan saya di <a href="https://github.com/Ronny-Saputra/" target="_blank">GITHUB</a>.
-            </p>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Personal Finance Manager</h3>
+                        <div class="tech-tags">
+                            <span>HTML</span><span>CSS</span><span>JAVASCRIPT</span>
+                        </div>
+                        <p>Personal Finance Manager adalah sistem berbasis web yang memungkinkan pengguna mencatat transaksi keuangan, memantau kondisi finansial, dan menetapkan target tabungan dengan cara yang lebih mudah dan terorganisir.</p>
+                        <div class="project-links">
+                             <a href="https://pesornalfinancemanagergt.web.app/" class="btn">View Demo</a>
+                             <a href="https://github.com/Ronny-Saputra/Personal-Finance-Manager" class="link-icon"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="/image/Projek1.png" alt="Gambar Proyek 1">
+                    </div>
+                </div>
+
+                <div class="project-card reverse">
+                     <div class="project-image">
+                        <img src="image/Projek2.png" alt="Gambar Proyek 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>To Do List App</h3>
+                        <div class="tech-tags">
+                            <span>JAVASCRIPT</span><span>NODE.JS</span><span>API</span>
+                        </div>
+                        <p>Deskripsi singkat tentang proyek ini. Apa tujuannya, teknologi apa yang digunakan, dan apa peran Anda dalam proyek tersebut.</p>
+                         <div class="project-links">
+                             <a href="https://todolist-43.web.app" class="btn">View Demo</a>
+                             <a href="https://github.com/Ronny-Saputra/ToDoList" class="link-icon"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <p>Have a project?</p>
+                <h2>Let's talk!</h2>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Ronny Saputra. Hak cipta dilindungi.</p>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-logo">Ronny-Saputra</p>
+            <div class="social-links">
+                <a href="https://github.com/Ronny-Saputra"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Ronny-Saputra. All rights reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>
